@@ -3,8 +3,6 @@ import Creature
 
 class World:
 
-    placeholder = 0
-
     def __init__(self, size, creatures):
         self.size = size
         self.creatures = creatures

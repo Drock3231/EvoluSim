@@ -8,15 +8,15 @@ from Objects import Creature
 # together with some clever file imports and arrays
 
 # initial vars?
-c = Creature
+initParams = [1,1,1] # 1. speed 2. size 3. sense
 creatureNumber = 1
 stepNumber = 1000
 creatures = []
 
 for i in range(creatureNumber):
-    creatures.append(Creature())
+    creatures.append(Creature.Creature(initParams, [1, 1]))
 
-world = World(10, creatures)
+world = World.World(10, creatures)
 
 # Next section should deal with iterating the world, idk how i would determine the endpoint or how to define what a"day"
 # is yet
