@@ -14,12 +14,12 @@ stepNumber = 1000
 creatures = []
 
 for i in range(creatureNumber):
-    creatures.append(Creature)
+    creatures.append(Creature())
 
-World = World(10, creatures)
+world = World(10, creatures)
 
 # Next section should deal with iterating the world, idk how i would determine the endpoint or how to define what a"day"
 # is yet
 
 for i in range(stepNumber):
-    World.update
+    world.update()
